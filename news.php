@@ -108,8 +108,7 @@ foreach($posts as $m)
    {
       $bbcode->bbcode_second_pass($message, $m['bbcode_uid'], $m['bbcode_bitfield']);
    }
-
-   $message = str_replace("\n", '<br />', $message);
+         
    $message = smiley_text($message);
 
    
